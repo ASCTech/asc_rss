@@ -1,0 +1,14 @@
+name = ASC RSS
+description = RSS configuration for standard sites
+core = 7.x
+package = ASC
+version = 7.x-1.0
+project = asc_rss
+dependencies[] = strongarm
+dependencies[] = views
+features[ctools][] = strongarm:strongarm:1
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[variable][] = asc_socialmedia_url_rss
+features[views_view][] = rss
+features_exclude[dependencies][ctools] = ctools
